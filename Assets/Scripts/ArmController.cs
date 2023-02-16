@@ -4,17 +4,21 @@ using UnityEngine;
 
 public class ArmController : MonoBehaviour
 {
+    Animator animator;
 
     // Start is called before the first frame update
     void Start()
     {
-   
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+         if(Input.GetButton("Fire1")){
+            animator.SetBool("ShouldThrowBall", true);
+ 
+        }
     }
 
     

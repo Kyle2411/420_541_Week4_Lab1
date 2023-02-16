@@ -456,4 +456,11 @@ AnimationClip:
     script: {fileID: 0}
   m_HasGenericRootTransform: 1
   m_HasMotionFloatCurves: 0
-  m_Events: []
+  m_Events:
+  - time: 1.5
+    functionName: ReleaseBall
+    data: 
+    objectReferenceParameter: {fileID: 11500000, guid: 1fa37acddabcad847a1c4c45eb77210b, type: 3}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0

@@ -7,6 +7,7 @@ public class BallController : MonoBehaviour
 {
     
     public GameObject bowlingPin;
+    int force = 13;
     public void Start()
     {
         
@@ -14,8 +15,7 @@ public class BallController : MonoBehaviour
 
     public void LaunchMe()
     {   
-        // TO DO 
-        // Write code to launch ball
+        GetComponent<Rigidbody>().AddForce(GetLaunchDirection() * force , ForceMode.Impulse);
     }
 
     public Vector3 GetLaunchDirection()
